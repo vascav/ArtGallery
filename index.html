@@ -6,35 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/styles.css"/>
         <title>Galleria d'arte</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(document).ready(function() {
-            var headerHeight = $('header').outerHeight();
-        
-            $(window).on('scroll', function() {
-              if ($(window).scrollTop() > headerHeight) {
-                $('nav').addClass('fixed-nav');
-                $('body').addClass('fixed-nav-body');
-              } else {
-                $('nav').removeClass('fixed-nav');
-                $('body').removeClass('fixed-nav-body');
-              }
-            });
-          });
-        </script>
 
     </head>
 
     <body>
       <header>
-          <h1>CLAUDIO CAVALCANTE</Canvas></h1>
-          <p>Benvenuti nella mia galleria</p>
+          <h1 class="nome">CLAUDIO CAVALCANTE</Canvas></h1>
+          <p class="motto">Benvenuti nella mia galleria</p>
           <nav>
               <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="opere.html">Opere d'arte</a></li>
-              <li><a href="biografia.html">Biografia</a></li>
-              <li><a href="contatti.html">Contatti</a></li>
+              <li><a href="assets/pages/index.html" target="_blank">Home</a></li>
+              <li><a href="assets/pages/opere.html" target="_blank">Opere d'arte</a></li>
+              <li><a href="assets/pages/contattami.html" target="_blank">Contatti</a></li>
               </ul>
           </nav>
       </header>
@@ -48,9 +31,40 @@
         <img src="assets/images/4.jpg" class="img"/>
       </div>
 
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      <div class="biografia">
+        <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+         totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae
+          vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut
+           odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt,
+            neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,
+             sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat
+              voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+               laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit,
+                qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum
+                 fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos
+                  ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et
+                   quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,
+                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                     facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                      optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+                       omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et
+                        aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates
+                         repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a 
+                         sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                          perferendis doloribus asperiores repellat.
+          </p>
+        </div>
 
       </main>
+
+      <footer>
+        <div class="collegamenti">
+          <a href="instagram.com" target="_blank"><img class="iconasocial" src="assets/images/in.jpeg" alt="icona instagram"></a>
+          <a href="mailto:xxx@xxx.com" target="_blank"><img class="iconasocial" src="assets/images/ma.png" alt="icona email"></a>
+          <a href="https://wa.me/3290613345" target="_blank"><img class="iconasocial" src="assets/images/wh.png" alt="icona whatsapp"></a>
+        </div>
+      </footer>
 
 
       <script src="assets/js/carosello.js"></script>

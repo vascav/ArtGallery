@@ -17,6 +17,20 @@ body {
     border: 1px solid purple;
   }
 
+  .nome {
+    letter-spacing: 3px;
+    /* border: 1px solid orange; */
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .motto {
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid orange; */
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -56,20 +70,51 @@ body {
   /* MAIN */
 
   main {
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+    height: 100vh;
+    border: 2px solid purple;
     display: flex;
-    flex-direction: row;
   }
+
+/* FOOTER */
+
+footer {
+  padding: 15px;
+  background-color: #333;
+  width: 100%;
+}
+
+.collegamenti {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconasocial {
+  margin: 0px 10px 0px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  transition: transform 0.1s ease;
+}
+
+.iconasocial:hover {
+  transform: scale(1.1);
+}
+
 
   /* CAROSELLO */
 
   .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     margin-bottom: 10px;
-    width: 400px;
-    height: 500px;
+    width: 40%;
+    height: 70%;
+    border: 1px solid red;
+    border-radius: 10px;
   }
 
   .carousel img {
@@ -77,8 +122,16 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
   
   .carousel img.active {
     display: inline-block;
+  }
+
+  .biografia {
+    width: 60%;
+    height: 40%;
+    margin-left: 25px;
+    border: 1px solid greenyellow;
   }
