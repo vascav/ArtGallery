@@ -17,12 +17,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #333;
+    box-shadow: 0px 0px 6px 3px #333;
     /* border: 3px solid purple; */
   }
 
 
 .start {
-  color: #ffffff;
+  color: #f1f1f1;
   letter-spacing: 5px;
   margin: 0px 0px 0px 30px;
   line-height: 5px;
@@ -61,13 +62,15 @@ body {
   
   nav ul li a {
     display: block;
-    color: #fff;
+    color: #f1f1f1;
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
+    transition: transform 0.1s ease;
   }
   
   nav ul li a:hover {
+    transform: scale(1.05);
     border-radius: 25px;
     background-color: #111;
   }
@@ -76,7 +79,7 @@ body {
   /* MAIN */
 
   main {
-    padding: 30px;
+    padding: 30px 50px;
     margin-top: 10px;
     /* border: 3px solid purple; */
     min-height: 100vh;
@@ -93,6 +96,12 @@ body {
     /* border: 3px solid greenyellow; */
     width: 60%;
     text-align: justify;
+  }
+
+  hr {
+    border: 1px solid #333;
+    border-radius: 30px;
+    height: 400px;
   }
 
   .about {
@@ -119,7 +128,8 @@ body {
     align-items: center;
     height: 400px;
     width: 30%;
-    /* border: 3px solid red; */
+    border-radius: 30px;
+    border: 2px solid #333;
   }
 
   .carousel img {
@@ -131,8 +141,8 @@ body {
   
   .carousel img.active {
     display: inline-block;
+    
   }
-
 
   
 /* FOOTER */
@@ -144,6 +154,7 @@ footer {
 }
 
 .collegamenti {
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -159,7 +170,13 @@ footer {
 }
 
 .iconasocial:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.copy {
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 4px;
 }
 
 
@@ -174,7 +191,7 @@ footer {
     border-bottom: 1px solid #f1f1f1;
   }
   nav {
-    margin: 5px auto 0px auto;
+    margin: 5px auto 5px auto;
   }
   main {
     display: flex;
@@ -183,7 +200,7 @@ footer {
     padding: 0px;
   }
   .biografia {
-    margin-top: 25px;
+    margin-top: 5px;
     width: 85%;
   }
   .about {
@@ -192,6 +209,13 @@ footer {
   }
   .carousel {
     margin-top: 5px;
+    margin-bottom: 0px;
     width: 85%;
+  }
+  hr {
+    rotate: 90deg;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
   }
 }
