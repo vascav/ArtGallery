@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Walter Turncoat', coursive, Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -23,20 +23,20 @@ body {
 
 .start {
   color: #ffffff;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   margin: 0px 0px 0px 30px;
   line-height: 5px;
 }
 
 .motto {
-  font-size: 12px;
+  font-size: 11px;
 }
 
   nav {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 20px;
     /* flex: 1; */
     /* border: 3px solid orange; */
   }
@@ -56,19 +56,19 @@ body {
   
   nav ul li {
     /* border: 3px solid red; */
-    margin: 0px 5px;
+    margin: 0px 7px;
   }
   
   nav ul li a {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
     text-decoration: none;
   }
   
   nav ul li a:hover {
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #111;
   }
 
@@ -171,6 +171,7 @@ footer {
   }
   .start {
     margin: auto;
+    border-bottom: 1px solid #f1f1f1;
   }
   nav {
     margin: auto;
@@ -182,11 +183,15 @@ footer {
     padding: 0px;
   }
   .biografia {
-    margin-top: 10px;
+    margin-top: 25px;
     width: 85%;
   }
+  .about {
+    text-align: center;
+    margin-bottom: 0px;
+  }
   .carousel {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 85%;
   }
 }
