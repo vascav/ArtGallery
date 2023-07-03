@@ -13,27 +13,31 @@ body {
     top: 0;
     text-align: center;
     padding: 0px;
-    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #333;
     /* border: 3px solid purple; */
   }
 
-  .nome {
-    letter-spacing: 3px;
-    /* border: 1px solid orange; */
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
 
-  .motto {
-    letter-spacing: 2px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    /* border: 1px solid orange; */
-  }
+.start {
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin: 0px 0px 0px 30px;
+  line-height: 5px;
+}
+
+.motto {
+  font-size: 12px;
+}
 
   nav {
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: 10px;
+    /* flex: 1; */
     /* border: 3px solid orange; */
   }
 
@@ -41,17 +45,18 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    color: #ffffff;
+    /* background-color: #333; */
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     /* border: 3px solid greenyellow; */
   }
   
   nav ul li {
-    display: inline-block;
     /* border: 3px solid red; */
+    margin: 0px 5px;
   }
   
   nav ul li a {
@@ -63,6 +68,7 @@ body {
   }
   
   nav ul li a:hover {
+    border-radius: 20px;
     background-color: #111;
   }
 
@@ -83,7 +89,7 @@ body {
 
   .biografia {
     /* border: 3px solid greenyellow; */
-    width: 60%;
+    width: 70%;
     text-align: justify;
   }
 
