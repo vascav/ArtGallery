@@ -80,14 +80,43 @@ body {
   /* MAIN */
 
   .home {
-    padding: 30px 50px;
-    margin-top: 10px;
     /* border: 3px solid purple; */
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .biografia {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 3px solid greenyellow; */
+    width: 70%;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+  }
+
+  .carousel {
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px #ccc;
+  }
+
+  .carousel img {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel img.active {
+    display: inline-block;
+    
   }
 
   .titpage {
@@ -96,7 +125,6 @@ body {
     margin: 25px auto 20px auto;
     letter-spacing: 1px;
   }
-
 
   .opere {
     display: flex;
@@ -154,63 +182,6 @@ body {
 
   .carrello:hover {
     transform: scale(1.1);
-  }
-
-
-  /* CAROSELLO */
-
-  .biografia {
-    /* border: 3px solid greenyellow; */
-    width: 60%;
-    text-align: justify;
-  }
-
-  hr {
-    border: 1px solid #333;
-    border-radius: 30px;
-    height: 400px;
-  }
-
-  .about {
-    text-align: left;
-    margin-top: 0px;
-    font-family: 'Anton';
-    letter-spacing: 1px;
-  }
-
-  /*
-  .carousel {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    height: 400px;
-    width: 90%;
-    /*border: 3px solid red;
-  } */
-
-  .carousel {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 30%;
-    border-radius: 30px;
-    border: 1px solid #333;
-  }
-
-  .carousel img {
-    display: none;
-    height: 400px;
-    width: 700px;
-    object-fit: scale-down;
-  }
-  
-  .carousel img.active {
-    display: inline-block;
-    
   }
 
   
@@ -296,7 +267,7 @@ input[type="submit"] {
   background-color: #333;
   color: #f1f1f1;
   min-width: 150px;
-  border-radius: 25px;
+  border-radius: 10px;
   transition: transform 0.1s ease;
 }
 
@@ -340,21 +311,6 @@ textarea {
   .biografia {
     margin-top: 5px;
     width: 85%;
-  }
-  .about {
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  .carousel {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    width: 85%;
-  }
-  hr {
-    rotate: 90deg;
-    margin: 0px;
-    padding: 0px;
-    height: 50px;
   }
   .quadro {
     width: 330px;
