@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/styles.css"/>
+      <title>CONTATTI | FRANK BASS</title>
+    </head>
+
+    <body>
+
+      <header>
+
+        <div class="start">
+          <h1 class="nome">FRANK BASS</Canvas></h1>
+          <p class="motto">ART GALLERY</p>
+        </div>
+
+        <nav>
+            <ul>
+              <li><a href="../../index.html">HOME</a></li>
+              <li><a href="opere.html">GALLERIA</a></li>
+              <li><a href="contattami.html">CONTATTI</a></li>
+            </ul>
+        </nav>
+
+      </header>
+      
+      <main class="contatti">
+
+            <h1 class="titpage">CONTATTAMI</h3>
+
+            <form id="my-form" action="https://formspree.io/f/meqwyzlv" method="POST">
+
+                <fieldset>
+                    <label>NOME<br>
+                        <input id="nome" name="nome" type="text" required />
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label>EMAIL<br>
+                        <input id="email" name="email" type="email" required />
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label>MESSAGGIO<br>
+                    <textarea id="message" name="message" rows="15" required></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="submit" id="my-form-button" value="INVIA" />
+
+                <p id="my-form-status"></p>
+            </form>
+
+      </main>
+
+      <footer>
+        <div class="collegamenti">
+          <a href="instagram.com" target="_blank"><img class="iconasocial" src="../images/in.jpeg" alt="icona instagram"></a>
+          <a href="https://wa.me/3290613345" target="_blank"><img class="iconasocial" src="../images/wh.png" alt="icona whatsapp"></a>
+          <a href="mailto:xxx@xxx.com" target="_blank"><img class="iconasocial" src="../images/ma.png" alt="icona email"></a>
+        </div>
+        <p class="copy">&copy; Frank Bass</p>
+      </footer>
+
+    </body>
+</html>
