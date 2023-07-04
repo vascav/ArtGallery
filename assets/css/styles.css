@@ -102,12 +102,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: transform 0.1s ease;
     border-radius: 25px;
-  }
-
-  .vendita:hover {
-    transform: scale(1.05);
   }
 
   .opere {
@@ -133,7 +128,7 @@ body {
     height: 400px;
   }
 
-  .prezzotitolo {
+  .prezzotitoloacquista {
     padding: 5px 0px;
     margin: 4px 0px 30px 0px;
     font-size: 20px;
@@ -143,6 +138,23 @@ body {
     border-radius: 20px;
     width: 400px;
     box-shadow: 2px 2px 6px 1px #ccc;
+    line-height: 30px;
+  }
+
+  .carrello {
+    padding: 5px;
+    object-fit: scale-down;
+    width: 40px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    transition: transform 0.1s ease;
+  }
+
+  .carrello:hover {
+    transform: scale(1.1);
   }
 
 
