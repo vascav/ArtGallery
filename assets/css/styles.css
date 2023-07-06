@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 1px solid pink; */
+    /* background-color: #f2f2f2; */
+    background-color: #333333;
   }
   
 
@@ -16,8 +18,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #333;
-    box-shadow: 0px 0px 6px 3px #333;
+    /* background-color: #333; */
+    background: linear-gradient(#000000, #333333);
+    box-shadow: 0px 0px 6px 3px #000000;
     /* border: 3px solid purple; */
   }
 
@@ -98,13 +101,17 @@ body {
     line-height: 40px;
     letter-spacing: 0px;
     margin-bottom: 50px;
+
+    /* prova */
+    color: #fff;
   }
 
   .carousel {
     overflow: hidden;
     height: 500px;
     width: 100%;
-    box-shadow: 0px 0px 6px 3px #ccc;
+    /* box-shadow: 0px 0px 6px 3px #ccc; */
+    box-shadow: 0px 0px 6px 3px #000000;
   }
 
   .carousel img {
@@ -124,6 +131,7 @@ body {
     text-align: center;
     margin: 25px auto 20px auto;
     letter-spacing: 1px;
+    color: #ffffff;
   }
 
   .opere {
@@ -143,7 +151,7 @@ body {
     margin: 20px 20px;
     width: 450px;
     height: 700px;
-    box-shadow: 2px 2px 8px 3px #ccc;
+    box-shadow: 0px 0px 10px 5px #000000;
     overflow: hidden;
     padding: 0px;
   }
@@ -165,6 +173,7 @@ body {
     height: 17%;
     max-height: 17%;
     min-height: 17%;
+    background: #ffffff;
   }
 
   .carrello {
@@ -174,7 +183,7 @@ body {
     height: 25px;
     border-radius: 10px;
     border: 1px solid #333;
-    box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px #333333;
     transition: transform 0.1s ease;
     margin-top: 13px;
     margin-bottom: 1px;
@@ -209,12 +218,14 @@ body {
 
 footer {
   padding: 15px;
-  background-color: #333;
-  box-shadow: 0px 0px 6px 3px #ccc;
+  /* background-color: #333; */
+  background: linear-gradient(#333333, #000000);
+  /* box-shadow: 0px 0px 6px 3px #ccc; */
+  box-shadow: 0px 0px 6px 3px #000000;
 }
 
 .collegamenti {
-  margin-top: 4px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -237,6 +248,7 @@ footer {
   color: #f1f1f1;
   text-align: center;
   margin-bottom: 4px;
+  margin-top: 15px;
 }
 
 span {
@@ -268,6 +280,7 @@ label {
   text-align: center;
   font-family: 'Anton';
   letter-spacing: 1px;
+  color: #ffffff;
 }
 
 input {
@@ -275,10 +288,12 @@ input {
   width: 55%;
   min-width: 250px;
   min-height: 30px;
-  background-color: #333;
-  border: 1px solid #333;
-  color: #f1f1f1;
-  box-shadow: 3px 3px 8px #ccc;
+  /* background-color: #333; */
+  background-color: #000;
+  border: 1px solid #000;
+  /* color: #f1f1f1; */
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 3px #030303;
   border-radius: 10px;
 }
 
@@ -288,8 +303,11 @@ input[type="submit"] {
   margin: 16px auto;
   height: 30px;
   font-size: 15gitpx;
-  background-color: #333;
-  color: #f1f1f1;
+  /* background-color: #333; */
+  background-color: #000;
+  border: 1px solid #000;
+  /* color: #f1f1f1; */
+  color: #ffffff;
   min-width: 150px;
   border-radius: 10px;
   transition: transform 0.1s ease;
@@ -304,11 +322,13 @@ textarea {
   width: 55%;
   min-width: 250px;
   margin: 10px 0 0 0;
-  background-color: #333;
-  border: 1px solid #333;
-  color: #f1f1f1;
+  /* background-color: #333; */
+  background-color: #000;
+  border: 1px solid #000;
+  /* color: #f1f1f1; */
+  color: #ffffff;
   resize: none;
-  box-shadow: 3px 3px 8px #ccc;
+  box-shadow: 0px 0px 10px 3px #030303;
   border-radius: 10px;
 }
 
