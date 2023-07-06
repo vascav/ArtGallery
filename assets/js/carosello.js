@@ -11,5 +11,5 @@ window.addEventListener('DOMContentLoaded', function() {
     currentImgIndex = (currentImgIndex + 1) % images.length;
     // Aggiungi la classe 'active' all'immagine successiva
     images[currentImgIndex].classList.add('active');
-  }, 3000);
+  }, 100);
 });
